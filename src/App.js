@@ -6,18 +6,20 @@ function App() {
     <div className="App">
       <header className="App-header">
         <p >SIAM</p>
-        <Person></Person>
-        <Person></Person>
+        <Person name="Rubel Hossain" position="Bowler"></Person>
+        <Person name="Shakib Al Hasan" position="All-Rounder"></Person>
+        <Person name="Tamim Iqbal" position="Batsman"></Person>
+        <Person name="Mahmudullah Riyad" position="Batsman"></Person>
       </header>
     </div>
   );
 }
 
-function Person(){
+function Person(props){
   return (
   <div style={{border:'2px solid red',padding : '2px',margin:'12px'}}>
-    <h1>Name : Shakib Al Hasan</h1>
-    <h2>He is a very good cricketer</h2>
+    <h1>Name : {props.name}</h1>
+    <h2>Position : {props.position}</h2>
   </div>
   )
 }
