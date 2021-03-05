@@ -2,11 +2,12 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const mine = ['siam','jafar','kazi','sifat']
   return (
     <div className="App">
       <header className="App-header">
         <p >SIAM</p>
-        <Person name="Rubel Hossain" position="Bowler"></Person>
+        <Person name={mine[2]} position="Bowler"></Person>
         <Person name="Shakib Al Hasan" position="All-Rounder"></Person>
         <Person name="Tamim Iqbal" position="Batsman"></Person>
         <Person name="Mahmudullah Riyad" position="Batsman"></Person>
